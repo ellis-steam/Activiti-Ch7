@@ -37,7 +37,7 @@
           <signavio:signavioMetaData metaKey="bgcolor" metaValue="#ffffff"></signavio:signavioMetaData>
         </extensionElements>
       </startEvent>
-      <serviceTask id="sid-31BA2817-87D2-4EFB-BC71-1FB7AF1BBDE4" name="Find customer">
+      <serviceTask id="sid-31BA2817-87D2-4EFB-BC71-1FB7AF1BBDE4" name="Find customer" activiti:class="org.bpmnwithactiviti.chapter7.errorevent.RetrieveCustomerTask">
         <extensionElements>
           <signavio:signavioMetaData metaKey="bgcolor" metaValue="#ffffcc"></signavio:signavioMetaData>
         </extensionElements>
@@ -67,7 +67,7 @@
         <conditionExpression xsi:type="tFormalExpression"><![CDATA[${customer.customerFound == false}]]></conditionExpression>
       </sequenceFlow>
     </subProcess>
-    <serviceTask id="sid-E1D1C549-4D5E-4917-ABAB-FA1EE77BDC53" name="Add sales opportunity">
+    <serviceTask id="sid-E1D1C549-4D5E-4917-ABAB-FA1EE77BDC53" name="Add sales opportunity" activiti:class="org.bpmnwithactiviti.chapter7.errorevent.StoreOpportunityTask">
       <extensionElements>
         <signavio:signavioMetaData metaKey="bgcolor" metaValue="#ffffcc"></signavio:signavioMetaData>
       </extensionElements>
@@ -156,7 +156,7 @@
         <omgdi:waypoint x="716.0" y="280.0"></omgdi:waypoint>
         <omgdi:waypoint x="825.0" y="283.0"></omgdi:waypoint>
         <bpmndi:BPMNLabel>
-          <omgdc:Bounds height="13.0" width="100.0" x="716.0" y="280.0"></omgdc:Bounds>
+          <omgdc:Bounds height="13.0" width="78.0" x="716.0" y="280.0"></omgdc:Bounds>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="sid-7A6276EE-AE6F-4A51-97C4-E26D3892001E" id="BPMNEdge_sid-7A6276EE-AE6F-4A51-97C4-E26D3892001E">
@@ -164,7 +164,7 @@
         <omgdi:waypoint x="696.0" y="349.0"></omgdi:waypoint>
         <omgdi:waypoint x="761.0" y="352.0"></omgdi:waypoint>
         <bpmndi:BPMNLabel>
-          <omgdc:Bounds height="39.0" width="100.0" x="696.0" y="300.0"></omgdc:Bounds>
+          <omgdc:Bounds height="13.0" width="96.0" x="696.0" y="300.0"></omgdc:Bounds>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="sid-E739B07B-4ECF-431E-BDD6-8C36D5A79798" id="BPMNEdge_sid-E739B07B-4ECF-431E-BDD6-8C36D5A79798">
@@ -201,7 +201,7 @@
         <omgdi:waypoint x="160.0" y="317.0"></omgdi:waypoint>
         <omgdi:waypoint x="315.0" y="317.0"></omgdi:waypoint>
         <bpmndi:BPMNLabel>
-          <omgdc:Bounds height="13.0" width="100.0" x="160.0" y="317.0"></omgdc:Bounds>
+          <omgdc:Bounds height="13.0" width="95.0" x="160.0" y="317.0"></omgdc:Bounds>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="sid-5612F326-9421-472B-AFC5-C21234B412DB" id="BPMNEdge_sid-5612F326-9421-472B-AFC5-C21234B412DB">
@@ -209,7 +209,7 @@
         <omgdi:waypoint x="140.0" y="400.0"></omgdi:waypoint>
         <omgdi:waypoint x="195.0" y="400.0"></omgdi:waypoint>
         <bpmndi:BPMNLabel>
-          <omgdc:Bounds height="13.0" width="100.0" x="140.0" y="337.0"></omgdc:Bounds>
+          <omgdc:Bounds height="13.0" width="72.0" x="140.0" y="337.0"></omgdc:Bounds>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
