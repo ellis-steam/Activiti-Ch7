@@ -39,19 +39,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Customer }
+     * Create an instance of {@link FindCustomerById }
      * 
      */
-    public Customer createCustomer() {
-        return new Customer();
-    }
-
-    /**
-     * Create an instance of {@link StoreSalesOpportunityResponse }
-     * 
-     */
-    public StoreSalesOpportunityResponse createStoreSalesOpportunityResponse() {
-        return new StoreSalesOpportunityResponse();
+    public FindCustomerById createFindCustomerById() {
+        return new FindCustomerById();
     }
 
     /**
@@ -71,6 +63,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link SalesOpportunity }
+     * 
+     */
+    public SalesOpportunity createSalesOpportunity() {
+        return new SalesOpportunity();
+    }
+
+    /**
+     * Create an instance of {@link StoreSalesOpportunityResponse }
+     * 
+     */
+    public StoreSalesOpportunityResponse createStoreSalesOpportunityResponse() {
+        return new StoreSalesOpportunityResponse();
+    }
+
+    /**
      * Create an instance of {@link FindCustomer }
      * 
      */
@@ -79,11 +87,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FindCustomerById }
+     * Create an instance of {@link Customer }
      * 
      */
-    public FindCustomerById createFindCustomerById() {
-        return new FindCustomerById();
+    public Customer createCustomer() {
+        return new Customer();
     }
 
     /**
@@ -92,14 +100,6 @@ public class ObjectFactory {
      */
     public FindCustomerByIdResponse createFindCustomerByIdResponse() {
         return new FindCustomerByIdResponse();
-    }
-
-    /**
-     * Create an instance of {@link SalesOpportunity }
-     * 
-     */
-    public SalesOpportunity createSalesOpportunity() {
-        return new SalesOpportunity();
     }
 
     /**
